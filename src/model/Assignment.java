@@ -1,14 +1,14 @@
 package model;
 
-public class Assigmment{
+public class Assignment{
     private int assigmmentId;
     private int teacherId;
     private int classId;
     private int subjectId;
 
-    public Assigmment(){}
+    public Assignment(){}
 
-    public Assigmment(int assigmmentId, int teacherId, int classId, int subjectId){
+    public Assignment(int assigmmentId, int teacherId, int classId, int subjectId){
         this.assigmmentId = assigmmentId;
         this.teacherId = teacherId;
         this.classId = classId;
@@ -29,7 +29,7 @@ public class Assigmment{
 
     @Override
     public String toString(){
-        return "Assigmment{ID: " + assigmmentId +
+        return "Assignment{ID: " + assigmmentId +
         ", TeacherId: " + teacherId +
         ", Class: " + classId +
         ", SubjectId: " + subjectId +

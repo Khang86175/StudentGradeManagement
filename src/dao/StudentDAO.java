@@ -42,7 +42,7 @@ public class StudentDAO implements DAO<Student>{
     }
     @Override
     public boolean delete(int id){
-        String sql = "DELETE FROM Student WHERE Student_id = ?";
+        String sql = "DELETE FROM Student WHERE student_id = ?";
         try(Connection conn = DatabaseConnector.getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)){
             pstmt.setInt(1, id);
             return pstmt.executeUpdate() > 0;
@@ -53,7 +53,7 @@ public class StudentDAO implements DAO<Student>{
     }
     @Override
     public Student getById(int id){
-        String sql = "SELECT * FROM Student WHERE Student_id = ?";
+        String sql = "SELECT * FROM Student WHERE student_id = ?";
         try(Connection conn = DatabaseConnector.getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)){
             pstmt.setInt(1, id);
             ResultSet rs = pstmt.executeQuery();
