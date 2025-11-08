@@ -1,7 +1,9 @@
 package model;
 
+
 public class Assignment {
     private int assignmentId;
+
     private int teacherId;
     private int classId;
     private int subjectId;
